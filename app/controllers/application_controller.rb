@@ -37,5 +37,8 @@ class ApplicationController < Sinatra::Base
     redirect '/recipes'
   end
 
+  get '/recipes/:id/edit'
+    @recipe = Recipe.find(params[:id])
+    erb :edit
 
 end
