@@ -4,4 +4,4 @@ Recipe Ingredients <%= @recipe.ingredients %>
 It will take <%= @recipe.cook_time %> to cook this bad boy!
 
 <input id="hidden" type="hidden" name="_method" value="delete">
-<a href='/delete'>Delete Recipe</a>
+<a href='/recipes/<%= @recipe.id %>/delete'>Delete Recipe</a>
